@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  .cart {
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/icons8-carrinho-de-compras-30.png);
+  }
+  .cart:hover{
+    transition: 50ms linear;
+    transform: scale(1.2);
+  }
+  .fav {
+    width: 30px;
+    height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-image: url(./assets/icons8-coração-30.png);
+  }
+  .fav:hover{
+    transition: 50ms linear;
+    transform: scale(1.2);
+  }
+  .fav:active{
+    background-image: url(./assets/icons8-coração-30\ click.png);
+  }
+  .logo {
+    height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .conteiner{
+    display: flex;
+    gap: 20px;
+    transition: 100ms linear;
+  }
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 12px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 300ms linear;
+}
+.pesquisa:focus{
+    border-radius: 30px;
+}
+.pesquisa input[type="search"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 1;
+    font-size: 16px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+li{
+    list-style: none;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+  
+.nav-list li {
+    letter-spacing: 3px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #000000;
+}
+#video-background {
+    width: 100%;
+    max-height: 100%; 
+    object-fit: cover; 
+}
+.filtro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    width: 300px;
+}
+.filtro h2{
+    margin-top: 10px;
+}
+.filtro li{
+    margin-top: 5px;
+}
+section{
+    display: flex;
+    justify-content: start;
+    height: 600px;
+    margin-top: 50px;
+}
+.catalogo{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.418);
+    margin-left: 50px;
+    width: 1400px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+h1{
+    transform: translateZ(10px);
+}
+.catalogo ul{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(247, 247, 247, 0);
+    width: 1400px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.conteinertenis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #000000;
+    transition: background-color 0.5s ease;
+    color: #ffffff;
+    width: 200px;
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.conteinertenis.gradient-animation {
+    width: 200px;
+    height: 300px;
+    animation: slideColor 0.5s forwards;
+}
+@keyframes slideColor {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.conteinerimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    transform: translateZ(50px);
+}
+#jordan{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(-40deg);
+}
+.conteinerbtn{
+    margin-top: 50px;
+    margin-left: 100px;
+    transform: translateZ(10px);
+}
+button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#preto{
+    background-color: rgb(0, 0, 0);
+}
+#azul{
+    background-color: blue;
+}
+#verde{
+    background-color: rgb(20, 151, 42);
+}
+#branco{
+    background-color: rgb(255, 255, 255);
+}
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #000000;
+    height: 400px;
+}
