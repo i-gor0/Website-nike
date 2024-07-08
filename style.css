@@ -159,19 +159,7 @@ h1{
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
-.conteinertenis.gradient-animation {
-    width: 200px;
-    height: 300px;
-    animation: slideColor 0.5s forwards;
-}
-@keyframes slideColor {
-    0% {
-        background-position: 0% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
+
 .conteinerimg{
     display: flex;
     justify-content: center;
