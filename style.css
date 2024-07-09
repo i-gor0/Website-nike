@@ -50,9 +50,11 @@
 .pesquisa {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px solid #ccc;
     border-radius: 20px;
     padding: 5px 12px;
+    margin-left: 100px;
     width: 300px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -112,10 +114,7 @@ main {
 .filtro h2{
     margin-top: 10px;
 }
-h2{
-    margin-top: 50px;
-    font-size: 15px;
-}
+
 .filtro li{
     margin-top: 5px;
 }
@@ -134,7 +133,8 @@ section{
     overflow-y: scroll;
 }
 h1{
-    margin-top: 20px;
+    font-family: Ga Maamli;
+    font-weight: 200;
     transform: translateZ(10px);
 }
 .catalogo ul{
@@ -151,13 +151,13 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #ffffff;
     transition: background-color 0.5s ease;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.418);
+    box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.418);
     color: #000000;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 450px;
     margin-left: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -165,10 +165,10 @@ h1{
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
-
-h1{
-    font-family: Ga Maamli;
-    font-weight: 200;
+.conteinertenis h2{
+    margin-top: 50px;
+    font-size: 20px;
+    transform: translateZ(10px);
 }
 
 .conteinerimg{
@@ -177,13 +177,14 @@ h1{
     align-items: center;
     width: 150px;
     height: 150px;
-    transform: translateZ(50px);
+    transform: translateZ(70px);
 }
 #jordan{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     transform: rotate(-40deg);
+    margin-left: -10px;
 }
 .conteinerbtn{
     margin-top: 30px;
@@ -197,6 +198,31 @@ button{
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
+    transition: 50ms linear;
+}
+.conteinerbtn button:hover{
+    transform: scale(1.2);
+}
+@keyframes brilho {
+    from{
+box-shadow: 0 0 0 green;
+    }
+    to{
+        box-shadow: 0 0 10px green;
+    }
+}
+.btncomprar{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    transform: translateZ(30px);
+    transition: 100ms linear;
+}
+.btncomprar:hover{
+    border: 0px;
+    color: white;
+    background-color: green;
+    animation: brilho 2s infinite alternate;
 }
 #preto{
     background-color: rgb(0, 0, 0);
@@ -210,6 +236,94 @@ button{
 #branco{
     background-color: rgb(255, 255, 255);
 }
+.heart-container {
+    --heart-color: rgb(255, 91, 137);
+    top: -9%;
+    left: 40%;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transition: .3s;
+    transform: translateZ(3px);
+  }
+  
+  .heart-container .checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .heart-container .svg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heart-container .svg-outline,
+          .heart-container .svg-filled {
+    fill: var(--heart-color);
+    position: absolute;
+  }
+  
+  .heart-container .svg-filled {
+    animation: keyframes-svg-filled 1s;
+    display: none;
+  }
+  
+  .heart-container .svg-celebrate {
+    position: absolute;
+    animation: keyframes-svg-celebrate .5s;
+    animation-fill-mode: forwards;
+    display: none;
+    stroke: var(--heart-color);
+    fill: var(--heart-color);
+    stroke-width: 2px;
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-filled {
+    display: block
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-celebrate {
+    display: block
+  }
+  
+  @keyframes keyframes-svg-filled {
+    0% {
+      transform: scale(0);
+    }
+  
+    25% {
+      transform: scale(1.2);
+    }
+  
+    50% {
+      transform: scale(1);
+      filter: brightness(1.5);
+    }
+  }
+  
+  @keyframes keyframes-svg-celebrate {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      filter: brightness(1.5);
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+      display: none;
+    }
+  }
 footer{
     margin-top: 50px;
     display: flex;
