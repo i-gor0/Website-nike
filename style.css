@@ -175,8 +175,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     transform: translateZ(70px);
 }
 #jordan{
