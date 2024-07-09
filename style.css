@@ -7,6 +7,7 @@
   .cart {
     width: 30px;
     height: 30px;
+    cursor: pointer;
     background-image: url(./assets/icons8-carrinho-de-compras-30.png);
   }
   .cart:hover{
@@ -18,6 +19,7 @@
     height: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    cursor: pointer;
     background-image: url(./assets/icons8-coração-30.png);
   }
   .fav:hover{
@@ -31,6 +33,7 @@
     height: 70px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin-left: 50px;
   }
   .conteiner{
     display: flex;
@@ -75,7 +78,7 @@
 }
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #ffffff;
