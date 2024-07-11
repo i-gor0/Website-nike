@@ -7,7 +7,7 @@
   .cart {
     width: 30px;
     height: 30px;
-    background-image: url(./assets/icons8-carrinho-de-compras-30.png);
+    background-image: url(../assets/icons8-carrinho-de-compras-30.png);
   }
   .cart:hover{
     transition: 50ms linear;
@@ -18,16 +18,17 @@
     height: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    background-image: url(./assets/icons8-coração-30.png);
+    background-image: url(../assets/icons8-coração-30.png);
   }
   .fav:hover{
     transition: 50ms linear;
     transform: scale(1.2);
   }
   .fav:active{
-    background-image: url(./assets/icons8-coração-30\ click.png);
+    background-image: url(../assets/icons8-coração-30\ click.png);
   }
   .logo {
+    margin-left: 150px;
     height: 70px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -75,7 +76,7 @@
 }
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #ffffff;
@@ -107,7 +108,7 @@ a{
   text-decoration: none;
 }
 button:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .nav-list {
     list-style: none;
@@ -176,7 +177,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #ffffff;
     transition: background-color 0.5s ease;
     box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.418);
@@ -190,8 +191,12 @@ h1{
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
+#tenis3{
+  color: #ffffff;
+  background-color: #000000;
+}
 .conteinertenis h2{
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 20px;
     transform: translateZ(10px);
 }
@@ -200,16 +205,16 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    margin-left: -50px;
     transform: translateZ(70px);
 }
-#jordan{
+#tenis{
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transform: rotate(-40deg);
-    margin-left: -10px;
 }
 .conteinerbtn{
     margin-top: 30px;
@@ -240,30 +245,30 @@ box-shadow: 0 0 0 green;
     height: 50px;
     width: 200px;
     margin-top: 20px;
-    transform: translateZ(30px);
+    transform: translateZ(20px);
     transition: 100ms linear;
 }
 .btncomprar:hover{
     border: 0px;
     color: white;
     background-color: green;
-    animation: brilho 2s infinite alternate;
+    animation: brilho 1s infinite alternate;
 }
 #preto{
     background-color: rgb(0, 0, 0);
 }
 #azul{
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
 }
 #verde{
     background-color: rgb(20, 151, 42);
 }
 #branco{
     background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
 }
 .heart-container {
     --heart-color: rgb(255, 91, 137);
-    top: -9%;
     left: 40%;
     position: relative;
     width: 20px;

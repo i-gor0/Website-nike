@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike</title>
+    <link rel="shortcut icon" href="./assets/nike_logo_icon_248371.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styleHome.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-list">
+            <img class="logo" src="./assets/nike_logo_icon_248371.svg" alt="">
+            <ul class="nav-list">
+                <li><input class="pesquisa" type="search" name="" id=""></li>
+            </ul>
+            <div class="conteiner">
+                <div class="fav"></div>
+                <div class="cart"></div>
+                <a id="login"  href="./login.html" target="_blank">
+                    <button>Fazer login</button>
+                </a>
+                <a id="criar" href="./createaccount.html" target="_blank">
+                    <button>Criar conta</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <video id="video-background" src="./assets/Nike Running _ Spec Ad (480p).mp4" autoplay loop></video>
+    </main>
+    <section>
+        <aside class="filtro">
+            <h2>
+                Pesquisar por:
+            </h2>
+            <ul>
+                <li>
+                    preço
+                </li>
+                <li>
+                    ordem alfabética
+                </li>
+                <li>
+                    data de lançamento
+                </li>
+            </ul>
+        </aside>
+        <div class="catalogo">
+            <ul>
+                <li class="conteinertenis" id="tenis1" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                    <h1>Air Jordan</h1>
+                    <div class="heart-container" title="Like">
+                        <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+                        <div class="svg-container">
+                            <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                                </path>
+                            </svg>
+                            <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="10,10 20,20"></polygon>
+                                <polygon points="10,50 20,50"></polygon>
+                                <polygon points="20,80 30,70"></polygon>
+                                <polygon points="90,10 80,20"></polygon>
+                                <polygon points="90,50 80,50"></polygon>
+                                <polygon points="80,80 70,70"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="conteinerimg">
+                        <img id="tenis" src="./assets/airjordan.png" alt="">
+                    </div>
+                    <h2>R$ 1599,99</h2>
+                    <button class="btncomprar">Comprar</button>
+                    <div class="conteinerbtn">
+                        <button id="preto" onclick="changeBackgroundColor(this, 'black')"></button>
+                        <button id="azul" onclick="changeBackgroundColor(this, 'blue')"></button>
+                        <button id="branco" onclick="changeBackgroundColor(this, 'white')"></button>
+                    </div>
+                </li>
+                <<li class="conteinertenis" id="tenis2" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                    <h1>Air Max</h1>
+                    <div class="heart-container" title="Like">
+                        <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+                        <div class="svg-container">
+                            <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                                </path>
+                            </svg>
+                            <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="10,10 20,20"></polygon>
+                                <polygon points="10,50 20,50"></polygon>
+                                <polygon points="20,80 30,70"></polygon>
+                                <polygon points="90,10 80,20"></polygon>
+                                <polygon points="90,50 80,50"></polygon>
+                                <polygon points="80,80 70,70"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="conteinerimg">
+                        <img id="tenis" src="./assets/AirMax.png" alt="">
+                    </div>
+                    <h2>R$ 664,99</h2>
+                    <button class="btncomprar">Comprar</button>
+                    <div class="conteinerbtn">
+                        <button id="preto" onclick="changeBackgroundColor(this, 'black'), changeImg(this)"></button> 
+                        <button id="branco" onclick="changeBackgroundColor(this, 'white')"></button>
+                    </div>
+                </li>
+                <<li class="conteinertenis" id="tenis3" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                    <h1>Tn</h1>
+                    <div class="heart-container" title="Like">
+                        <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+                        <div class="svg-container">
+                            <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                                </path>
+                            </svg>
+                            <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                                </path>
+                            </svg>
+                            <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="10,10 20,20"></polygon>
+                                <polygon points="10,50 20,50"></polygon>
+                                <polygon points="20,80 30,70"></polygon>
+                                <polygon points="90,10 80,20"></polygon>
+                                <polygon points="90,50 80,50"></polygon>
+                                <polygon points="80,80 70,70"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="conteinerimg">
+                        <img id="tenis" src="./assets/tn.png" alt="">
+                    </div>
+                    <h2>R$ 664,99</h2>
+                    <button class="btncomprar">Comprar</button>
+                    <div class="conteinerbtn">
+                        <button id="preto" onclick="changeBackgroundColor(this, 'black'), changeImg(this)"></button>
+                        <button id="branco" onclick="changeBackgroundColor(this, 'white')"></button>
+                    </div>
+                </li>
+                <li class="conteinertenis">
+
+                </li>
+                <li class="conteinertenis">
+
+                </li>
+                <li class="conteinertenis">
+                    
+                </li>
+                <li class="conteinertenis">
+                    
+                </li>
+                <li class="conteinertenis">
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>limitada</footer>
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+</body>
