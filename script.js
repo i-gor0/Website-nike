@@ -1,5 +1,4 @@
 function changeBackgroundColor(button, color) {
-    // Definindo a cor azul corretamente
     const blue = '#0A63F0';
     if (color === 'blue') {
         color = blue;
