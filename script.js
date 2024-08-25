@@ -1,8 +1,5 @@
 function changeBackgroundColor(button, color) {
-    const blue = '#0A63F0';
-    if (color === 'blue') {
-        color = blue;
-    }
+
 
     const containerTenis = button.closest('.conteinertenis');
     const tenisName = containerTenis.querySelector('h1').textContent;
@@ -56,3 +53,16 @@ function changeImg(containerTenis, color, tenisName) {
         }
     }
 }
+    function validateForm() {
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const submitBtn = document.getElementById("submitBtn");
+
+        // Verifica se ambos os campos estão preenchidos
+        if (email !== "" && password !== "") {
+            submitBtn.disabled = false;
+        } else {
+            submitBtn.disabled = true;
+        }
+    }
+

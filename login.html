@@ -11,9 +11,29 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleLogin.css">
     </head>
 <body>
-    
+    <div class="video-background">
+        <video autoplay muted playsinline>
+            <source src="./assets/Nike Logo Animation _ Motion Graphics _ 2D Animation _ Motionalistic.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+    <main>
+        <h1>Bem-vindo de volta!</h1>
+        <form action="./HomeDefault.html" method="get" onsubmit="return validateForm();">
+            <div class="form__group field">
+                <input type="email" id="email" class="form__field" placeholder="Email" required autocomplete="off" oninput="validateForm()">
+                <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group field">
+                <input type="password" id="password" class="form__field" placeholder="Senha" required autocomplete="off" oninput="validateForm()">
+                <label for="password" class="form__label">Senha</label>
+            </div>
+            <input type="submit" id="submitBtn" value="Entrar" disabled>
+        </form>
+    </main>
+<script src="./script.js"></script>    
 </body>
 </html>
