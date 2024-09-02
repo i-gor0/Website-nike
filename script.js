@@ -24,9 +24,6 @@ function changeImg(containerTenis, color, tenisName) {
             case '#0A63F0':
                 img.setAttribute("src", "./assets/airjordanazul.png");
                 break;
-            case 'green':
-                img.setAttribute("src", "./assets/airjordanverde.png");
-                break;
             default:
                 img.setAttribute("src", "./assets/airjordan.png");
                 break;
@@ -42,7 +39,7 @@ function changeImg(containerTenis, color, tenisName) {
                 break;
         }
     }
-    if (tenisName === 'Tn') {
+    if (tenisName === 'Air max plus Tn') {
         switch (color) {
             case 'white':
                 img.setAttribute("src", "./assets/tnBranco.png");
@@ -52,13 +49,22 @@ function changeImg(containerTenis, color, tenisName) {
                 break;
         }
     }
+    if (tenisName === 'Nike x Skepta') {
+        switch (color) {
+            case '#0A63F0':
+                img.setAttribute("src", "./assets/skepta_azul.png");
+                break;
+            default:
+                img.setAttribute("src", "./assets/skepta.png");
+                break;
+        }
+    }
+
 }
     function validateForm() {
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value.trim();
         const submitBtn = document.getElementById("submitBtn");
-
-        // Verifica se ambos os campos estão preenchidos
         if (email !== "" && password !== "") {
             submitBtn.disabled = false;
         } else {

@@ -191,6 +191,9 @@ h1{
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
+#tenis4{
+  background-color: rgba(189, 0, 0, 0.925);
+}
 #tenis3{
   color: #ffffff;
   background-color: #000000;
@@ -266,6 +269,10 @@ box-shadow: 0 0 0 green;
 #branco{
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
+}
+#red{
+  background-color: #bd0000ec;
+  border: 2px solid rgb(0, 0, 0);
 }
 .heart-container {
     --heart-color: rgb(255, 91, 137);
