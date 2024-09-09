@@ -371,29 +371,24 @@ footer{
 }
 span{
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 10px;
   margin-left: 25%;
   width: 50%;
-  height: 250px;
-  background: radial-gradient(circle, #3b0088, #6e00aa, #000);
+  height: 200px;
+  border-radius: 10px;
+  background: radial-gradient(circle, #0f0016, #460b46);
   overflow: hidden;
 }
 span img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
+  margin-left: 13%;
   object-fit: contain;
-  animation: girar 2s ease-in-out alternate infinite;
   transform-origin: center;
+  filter: drop-shadow(0 0 50px #ff00dd);
 }
-@keyframes girar {
-  from{
-    transform: scale(1.0);
-    rotate: 10deg;
-  }
-  to{
-    transform: scale(1.2);
-    rotate: -10deg;
-  }
+span h2{
+  margin-left: 20%;
+  color: rgb(180, 180, 180);
 }
